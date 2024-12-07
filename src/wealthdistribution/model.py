@@ -67,6 +67,7 @@ class WealthModel(Model):
     def step(self):
         self.schedule.step(shuffle_types=False, shuffle_agents=True)
         self.datacollector.collect(model=self)
+        self.max_wealth = 0
 
 
 def low(model: WealthModel):

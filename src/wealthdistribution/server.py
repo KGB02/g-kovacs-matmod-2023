@@ -49,10 +49,10 @@ model_params = {
     "max_grain": 50,
     "percent_best_land": mesa.visualization.Slider(name="percent_best_land", value=0.5, min_value=0, max_value=1, step=0.1),
     "num_people": mesa.visualization.Slider(name="num_people", value=500, min_value=10, max_value=900, step=1),
-    "life_expectancy_max": 30,
-    "life_expectancy_min": 5,
-    "metabolism_max": 10,
-    "num_grain_grow": 7
+    "life_expectancy_max": mesa.visualization.Slider(name="life_expectancy_max", value=30, min_value=1, max_value=100, step=1),
+    "life_expectancy_min": mesa.visualization.Slider(name="life_expectancy_min", value=5, min_value=1, max_value=100, step=1),
+    "metabolism_max": mesa.visualization.Slider(name="metabolism_max", value=5, min_value=1, max_value=25, step=1),
+    "num_grain_grow": mesa.visualization.Slider(name="num_grain_grow", value=5, min_value=1, max_value=10, step=1)
 }
 
 server = ModularServer(
